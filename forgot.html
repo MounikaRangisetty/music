@@ -1,0 +1,52 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>forget password</title>
+    <link rel="stylesheet" href="signin.css">
+   </head>
+   <body>
+   
+       
+       
+    <form>
+    <h1>FORGOT PASSWORD</h1><br>
+    <span  title="Close Modal"><a href='index.html' style="text-decoration: none; " class="close">&times;</a></span>
+           
+    
+        <label for="username">Your username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+          <br><br>
+
+          
+            <label for="pswrd">Your password</label>
+            <input type="password" placeholder="Enter Password" id="psw" name="pswrd" required>
+<br><br>
+    <label for="newpwd"> Re-enter Password:</label><br>
+    <input type="password" placeholder="Repeat New password" name="password" onblur="valrpas(this.id)">
+    <label id="lbrpass" style="color:red; visibility: hidden;"><b>Invalid</b></label><br>
+   <br>
+   
+   
+    <button class="login" name="update">Login</button>
+    
+    </form>
+    <script>
+         function valrpass(id)
+    {
+        let rpass=document.getElementById(id);
+        let pass=document.getElementById('psw');
+        if(rpass.value != pass.value )
+        {
+          document.getElementById('lbrpass').style.visibility="visible";
+            rpass.style.border="2px red solid";
+            return false;
+        }
+        document.getElementById('lbrpass').style.visibility="hidden";
+            rpass.style.border="2px solid #00ff00";
+   }
+
+    </script>
+   </body>
+   

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="signin.css">
+
+</head>
+<body>
+    
+  
+    <form class="modal-content animate" action="db.php" method="post">
+        
+        
+        <div class="imgcontainer">
+            <span  title="Close Modal"><a href='index.html' style="text-decoration: none; " class="close">&times;</a></span>
+            <div class="headingsContainer">
+                <h3>Sign in</h3>
+                <p>Sign in with your username and password</p>
+            </div>
+            <img src="img_avatar1.png" alt="Avatar" class="avatar">
+          </div>
+        
+        <div class="mainContainer">
+          
+            <label for="mail">Your Email</label>
+            <input type="text" placeholder="Enter Email" name="mail" required>
+
+            <br><br>
+
+          
+            <label for="pswrd">Your password</label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+        
+            <div class="subcontainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="forgot.html">Forgot Password?</a></p>
+            </div>
+
+
+            
+            <button class="login" name="login" type="submit">Login</button>
+
+           
+            <p class="register">Not a user?  <a href="register.html">Register here!</a></p>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
